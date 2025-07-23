@@ -1,0 +1,39 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "AI API Wrapper",
+    "description": "Unified API wrapper for AI providers",
+    "version": "1.0.0"
+  },
+  "basePath": "/",
+  "schemes": ["http"],
+  "paths": {
+    "/generate": {
+      "post": {
+        "summary": "Generate AI response",
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "prompt",
+            "description": "Prompt to send",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "provider": { "type": "string" },
+                "prompt": { "type": "string" }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          }
+        }
+      }
+    }
+  }
+}
