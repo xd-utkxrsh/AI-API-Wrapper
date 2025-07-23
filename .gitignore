@@ -1,4 +1,23 @@
-.env
+# Python
 __pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual Environment
 venv/
-*.pyc
+env/
+ENV/
+
+# Environment Variables
+.env
+
+# VS Code / IDE settings
+.vscode/
+.idea/
+
+# macOS/Windows
+.DS_Store
+Thumbs.db
