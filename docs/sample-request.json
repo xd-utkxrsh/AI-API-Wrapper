@@ -1,0 +1,5 @@
+{
+  "provider": "openai",
+  "prompt": "Write a poem about stars in the night sky.",
+  "model": "gpt-3.5-turbo"
+}

@@ -1,0 +1,38 @@
+openapi: 3.0.0
+info:
+  title: AI API Wrapper
+  description: Unified wrapper for OpenAI, Cohere, and other LLM providers.
+  version: "1.0.0"
+servers:
+  - url: https://your-api-host.com
+paths:
+  /generate:
+    post:
+      summary: Generate text from an LLM provider
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                provider:
+                  type: string
+                  example: openai
+                prompt:
+                  type: string
+                  example: "Write a poem about DevOps"
+                model:
+                  type: string
+                  example: "gpt-3.5-turbo"
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  response:
+                    type: string
+                    example: "Roses are red, DevOps is cool..."
