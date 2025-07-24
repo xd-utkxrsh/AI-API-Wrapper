@@ -13,6 +13,8 @@ ENV/
 
 # Environment Variables
 .env
+.env
+
 
 # VS Code / IDE settings
 .vscode/
